@@ -1,7 +1,7 @@
 {
   "name": "react-system",
   "version": "1.0.0",
-  "description": "基于react和node的管理系统",
+  "description": "基于react+webpack+node+express的项目模板",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --inline --colors --content-base ./build",
