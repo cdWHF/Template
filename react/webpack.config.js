@@ -10,7 +10,7 @@ const extractLess = new ExtractTextPlugin('css/[name]-less.css');
 const node_modules_dir = path.resolve(__dirname, "node_moudles");
 
 module.exports = {
-    entry: './src/index.jsx',
+    entry: './src/App.jsx',
     output: {
         path: __dirname + '/dist',
         filename: "js/bundle.js"

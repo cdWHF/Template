@@ -1,7 +1,7 @@
 let express = require('express');
 let path = require('path');
 let app = express();
-const userRoute = require('./server/routes/user');
+const userRoute = require('./routes/user');
 
 //静态文件配置
 app.use('/dist',express.static(path.join(__dirname,'dist')));
