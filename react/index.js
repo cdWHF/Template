@@ -13,7 +13,7 @@ app.get('/*', function (req, res) {
     res.sendFile(path.resolve(__dirname,'dist') + '/index.html');
 });
 
-var server = app.listen(8888, function(){
+var server = app.listen(8080, function(){
     var host = server.address().address;
     var port = server.address().port;
     console.log('Listening at http://%s:%s', host, port);
