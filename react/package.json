@@ -4,24 +4,11 @@
   "description": "基于react+webpack+node+express的项目模板",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server/index.js webpack-dev-server --hot --inline --colors --content-base ./build",
+    "start": "nodemon index.js webpack-dev-server --hot --inline --colors --content-base ./build",
     "build": "webpack --mode production --progress --color"
   },
   "author": "weihongfu",
   "license": "ISC",
-  "babel": {
-    "plugins": [
-      [
-        "import",
-        [
-          {
-            "libraryName": "antd",
-            "style": "css"
-          }
-        ]
-      ]
-    ]
-  },
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.3",
