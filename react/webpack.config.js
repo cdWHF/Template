@@ -10,6 +10,7 @@ const extractLess = new ExtractTextPlugin('css/[name]-less.css');
 const node_modules_dir = path.resolve(__dirname, "node_moudles");
 
 module.exports = {
+    mode: 'production',
     entry: './src/App.jsx',
     output: {
         path: __dirname + '/dist',
@@ -21,8 +22,7 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel-loader',
             query: {
-                plugins: ['transform-runtime'],
-                presets: ['es2015', 'react', 'stage-2']
+                plugins: ['transform-runtime'],               
             }
         }, {
             test: /\.css$/,
@@ -66,7 +66,7 @@ module.exports = {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         extractCSS,
-        extractLess,
         new ExtractTextPlugin("[name].css"),
+     
     ]
 };
